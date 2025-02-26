@@ -1,6 +1,6 @@
 // export const Input = () => {
-//   const [text, setText] = useState(""); //다시 렌더링이 된다.
-//   const refText = useRef("");
+//   const [text, setText] = useState(""); //다시 렌더링이 된다. 상태값을 받아 변경시켜주는것
+//   const refText = useRef(""); 
 //   return (
 //     <>
 //       {/* <input onChange={(e) => setText(e.target.value)} /> 
@@ -15,7 +15,8 @@
 import { useRef } from "react";
 
 export const Input = () => {
-    // const [ text, setText ] = useState("");
+    //객체 분할 구조
+    // const [ text, setText ] = useState(""); 배열 
     const refText = useRef("");
     return (
         <>
@@ -30,3 +31,7 @@ export const Input = () => {
         </>
     )
 }
+
+
+
+
